@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import ParseSwift
 
 struct ContentView: View {
     @State var vm: FamousQuotesViewModel
@@ -15,6 +16,12 @@ struct ContentView: View {
             List {
                 ForEach(vm.quotes) { quote in
                     Text(quote.content)
+                }
+                .onDelete { offsets in
+                    for index in offsets {
+                        QuoteRepository.shared.deleteQuote(quote: vm.quotes[index])
+                    }
+                    vm.quotes.remove(atOffsets: offsets)
                 }
             }
             .onAppear {

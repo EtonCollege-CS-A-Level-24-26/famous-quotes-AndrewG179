@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		446502622D8DAF8600D80346 /* ParseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 446502612D8DAF8600D80346 /* ParseSwift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		B48F405D2D89D4DC0063D229 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				446502622D8DAF8600D80346 /* ParseSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			);
 			name = FamousQuotesParse;
 			packageProductDependencies = (
+				446502612D8DAF8600D80346 /* ParseSwift */,
 			);
 			productName = FamousQuotesParse;
 			productReference = B48F404C2D89D4DA0063D229 /* FamousQuotesParse.app */;
@@ -196,6 +202,7 @@
 			mainGroup = B48F40432D89D4D90063D229;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
+				446502602D8DAF8600D80346 /* XCRemoteSwiftPackageReference "Parse-Swift" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = B48F404D2D89D4DA0063D229 /* Products */;
@@ -554,6 +561,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		446502602D8DAF8600D80346 /* XCRemoteSwiftPackageReference "Parse-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/parse-community/Parse-Swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.14.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		446502612D8DAF8600D80346 /* ParseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 446502602D8DAF8600D80346 /* XCRemoteSwiftPackageReference "Parse-Swift" */;
+			productName = ParseSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B48F40442D89D4D90063D229 /* Project object */;
 }
